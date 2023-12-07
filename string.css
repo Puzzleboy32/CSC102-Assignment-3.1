@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  body {
+    /* its for the color background */
+    background-color: blue;
+  }
+  .container {
+    /* this also the color for my font and background box*/
+    width: 90%;
+    max-width: 31.25em;
+    background-color: #ffffff;
+    padding: 4em 3em;
+    border-radius: 0.5em;
+    box-shadow: 0 2em 3.5em rgba(0, 9, 50, 0.3);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  .title {
+    color: black;
+    font-size: 1.6em;
+  }
+  .input-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 16px;
+    margin: 32px 0 16px 0;
+  }
+  input {
+    border: none;
+    border-bottom: 2px solid #e2e4ef;
+    color: black;
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  input:focus {
+    border-bottom: 2px solid blue;
+  }
+  button {
+    font-size: 16px;
+    padding: 16px 8px;
+    background-color: blue;
+    border: none;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  p {
+    /* Thats for the word you answer*/
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 16px 0;
+    border-radius: 8px;
+    transition: 2s;
+  }
+  p span {
+    font-weight: 500;
+    font-style: italic;
+  }
+  .success {
+    /* If palindrome is correct*/
+    background-color: green;
+    animation: pop 2;
+  }
+  .error {
+    /* If palindrome is wrong*/
+    background-color: red;
+    animation: pop 2;
+  }
